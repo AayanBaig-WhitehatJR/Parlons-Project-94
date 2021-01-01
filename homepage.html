@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Parlons: Home Page</title>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+        
+        <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel = "stylesheet" href = "main.css">
+    </head>
+    <body>
+      
+        <nav class="navbar navbar-default" id = "navbar1">
+          
+            <div class="container-fluid">
+
+              <div class="navbar-header">
+                <a class="navbar-brand" href="#">Parlons</a>
+              </div>
+              
+              <ul class="nav navbar-nav">
+                <li class="active" id = "li-home"><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#FAQ">FAQ</a></li>
+                <li><a href="#BugFixes">Bug Fixes</a></li>
+                
+              </ul>
+              <button id = "logout" class = "glyphicon glyphicon-log-out btn btn-danger" onclick = "logout()" style="margin-left: 1063px;" >Logout</button>
+            </div>
+          </nav>
+          
+        <section id = "Home">
+<center>
+    
+    
+    <h3>Your Location: Homepage.</h3>
+    <br>
+    <h1>Parlons... <br><span>Changing the way of chatting worldwide.</span></h1>
+    <span id = "welcomeSpan">
+      <h3 id = "welcome"></h3><br> 
+      <h2>Join a room / create one below! </h2>
+    </span>
+    <input id = "inputRoomName" class = "form-control" placeholder="Enter a room name below!">
+    <button id = "btnAddRoom" class = "btn btn-success" onclick="addRoom()">Add and join a Room</button> 
+    <h2 class = "color_white">Available Rooms on Parlons are below. <h2 class = "glyphicon glyphicon-arrow-down"></h2></h2>
+    <div id = "output"></div>
+</center>
+        </section>
+        <script src = "homepage.js"></script>
+    </body>
+</html>
